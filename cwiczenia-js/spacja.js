@@ -1,5 +1,3 @@
-let zmienna1 = "   Dupa Jasia";
-
 function spacja(slowo) {
   let noweslowo = "";
   for (let i = 0; i < slowo.length; i++) {
@@ -12,12 +10,12 @@ function spacja(slowo) {
   return noweslowo;
 }
 
-// console.log(zmienna1);
+console.log("\n");
 
-let nasza_zmienna = spacja("   dupa    ");
+let zmienna1 = "   Jakieś słowo ";
+console.log(spacja(zmienna1));
 
-// console.log(nasza_zmienna);
-// console.log(spacja(zmienna1));
+console.log("\n");
 
 // Jeśli występuje spacja w zmiennej, zwróć treść bez spacji
 // Jeśli zwrócony wyraz jest pustym stringiem, wyświetl komunikat "Pole nie może być puste"
@@ -97,6 +95,3 @@ test2();
 test3();
 test4();
 test5();
-
-// let wynik = usunSpacje("   ");
-// console.log(wynik);
