@@ -47,7 +47,13 @@ function mult() {
 }
 
 function div() {
-  document.getElementById("polewynik").innerHTML = dzielenie(pierwsza, druga);
-  document.getElementById("polewynik").style.border =
-    "1px solid darkolivegreen";
+  if (druga === 0) {
+    document.getElementById("polewynik").innerHTML = "Nie dzielimy przez 0";
+    document.getElementById("polewynik").style.border =
+      "1px solid darkolivegreen";
+  } else {
+    document.getElementById("polewynik").innerHTML = dzielenie(pierwsza, druga);
+    document.getElementById("polewynik").style.border =
+      "1px solid darkolivegreen";
+  }
 }
